@@ -49,4 +49,5 @@ jobs:
       with:
         name: greetings-jar
     - shell: bash
-      run: java -jar greetings-actions.jar ${{ github.event.inputs.myValues }}
+      run: | 
+       java -jar greetings-actions.jar ${{ github.event.inputs.myValues }}
